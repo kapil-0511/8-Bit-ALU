@@ -1,0 +1,29 @@
+Input and Output Bus Details :-
+
+input operend 1 : in1 (8 bit)
+input operend 2 : in2 (8 bit)
+output          : out (8 bit)
+input Reset     : rst (1 bit)
+input Clock     : clk (1 bit)
+input Opcode    : op  (4 bit)
+
+Opcode details :-
+
+Opcode  - operation selection
+
+0000    - Addition
+0001    - Subtraction (in1-in2)
+0010    - Increment output by 1
+0011    - Decrement output by 1
+0100    - Airthmetic OR
+0101    - Airthmetic AND
+0110    - Complement of input 1
+0111    - Complement of input 2
+1000    - Leftshift output by 1
+1001    - Rightshift output by 1
+1010    - Leftshift output by 4
+1011    - Rightshift output by 4
+1100    - Circular leftshift output by 1
+1101    - Circular Rightshift output by 1
+1110    - Circular shift output by 4
+Default - No Change in output
